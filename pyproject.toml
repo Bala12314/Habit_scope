@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lifelens"
+version = "0.1.0"
+description = "Local-first AI assistant that analyzes your smartwatch and phone data: daily score, habits, patterns, coaching."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Abhishek Kaushal" }]
+keywords = ["health", "habits", "smartwatch", "screen-time", "quantified-self", "assistant"]
+dependencies = []  # standard library only
+
+[project.scripts]
+lifelens = "lifelens.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

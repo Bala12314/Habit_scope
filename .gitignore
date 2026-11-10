@@ -1,0 +1,13 @@
+# Your personal data never goes to git
+data/
+reports/
+*.xml
+export/
+
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+.env
